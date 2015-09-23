@@ -43,8 +43,9 @@ npm install
 
 If you want to test [octokat.js](https://github.com/philschatz/octokat.js) calls with a minimum rig, run `node` and paste this line in:
 
-`var Octokat = require('octokat'); octo = new Octokat({ username: process.env.GITHUB_USER , password: process.env.GITHUB_TOKEN,rootURL: 'https://yourghedomain.com/api/v3'});var cb = function (err, val) { console.log(val); };
-`
+```javascript
+var Octokat = require('octokat'); octo = new Octokat({ username: process.env.GITHUB_USER , password: process.env.GITHUB_TOKEN,rootURL: 'https://yourghedomain.com/api/v3'});var cb = function (err, val) { console.log(val);};
+```
 
 Then you can run quick test queries like:
 
