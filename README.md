@@ -27,6 +27,10 @@ The script requires 3 variables:
 Using `-u` or `-t` overrides the ENV variables.
 
 ```bash
+git clone <repo_url>
+npm install
+export GITHUB_USER=<site admin username>
+export GITHUB_TOKEN=<admin personal access token>
 ./github.js -h yourGitHubEnterpriseDomain.net
 ```
 
