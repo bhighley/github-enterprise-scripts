@@ -30,42 +30,39 @@ if (!hostname || !token || !username) {
 	process.exit(0)
 }
 
-// Interactive prompt:
-//inquirer.prompt({
-//	type: "list",
-//	name: "operation",
-//	message: "What would you like to do today",
-//	choices: ["Create a new organisation. Add all existing users to it.", "Create a user. Add it to all organisations"]
-//}, function (answers) {
-//	if (answers.operation.indexOf('Create a new organisation') >= 0) {
-//		inquirer.prompt([
-//			{
-//				type: "input",
-//				name: "organisationName",
-//				message: "What's the login id of the new organisation?"
-//			},
-//			{
-//				type: "input",
-//				name: "organisationProfileName",
-//				message: "What's the profile name of the new organisation?"
-//			}], function (answers) {
-//			github.createOrgTeamAndInsertUsers(answers.organisationName, answers.organisationProfileName, teamName)
-//		})
-//	} else {
-//		inquirer.prompt([
-//			{
-//				type: "input",
-//				name: "username",
-//				message: "What's the login id of the user? ",
-//			},
-//			{
-//				type: "input",
-//				name: "userEmail",
-//				message: "What's the email of the user? ",
-//			}], function (answers) {
-//			github.createUserAddToAllOrgs(answers.username, answers.userEmail, username, teamName)
-//		});
-//	}
-//})
-
-github.createUserAddToAllOrgs("aaab", "aaab@github.com", username, teamName)
+inquirer.prompt({
+	type: "list",
+	name: "operation",
+	message: "What would you like to do today",
+	choices: ["Create a new organisation. Add all existing users to it.", "Create a user. Add it to all organisations"]
+}, function (answers) {
+	if (answers.operation.indexOf('Create a new organisation') >= 0) {
+		inquirer.prompt([
+			{
+				type: "input",
+				name: "organisationName",
+				message: "What's the login id of the new organisation?"
+			},
+			{
+				type: "input",
+				name: "organisationProfileName",
+				message: "What's the profile name of the new organisation?"
+			}], function (answers) {
+			github.createOrgTeamAndInsertUsers(answers.organisationName, answers.organisationProfileName, teamName)
+		})
+	} else {
+		inquirer.prompt([
+			{
+				type: "input",
+				name: "username",
+				message: "What's the login id of the user? ",
+			},
+			{
+				type: "input",
+				name: "userEmail",
+				message: "What's the email of the user? ",
+			}], function (answers) {
+			github.createUserAddToAllOrgs(answers.username, answers.userEmail, username, teamName)
+		});
+	}
+})

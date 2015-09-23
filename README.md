@@ -2,6 +2,8 @@
 
 This is a collection of scripts to automate GitHub Enterprise workflows using the GitHub Enterprise API. 
 
+![screenshot](screenshot.png)
+
 #### Use cases
 
 1. Create a user. Add it to `<teamName>` in all instance organizations
