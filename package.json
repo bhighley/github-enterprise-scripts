@@ -1,0 +1,13 @@
+{
+  "name": "github-scripts",
+  "version": "0.0.1",
+  "description": "GitHub Enterprise scripts",
+  "main": "index.js",
+  "author": "vmrmonteiro@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^0.10.0",
+    "octokat": "^0.4.12",
+    "request": "^2.62.0"
+  }
+}
