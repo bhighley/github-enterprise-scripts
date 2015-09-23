@@ -2,7 +2,7 @@
 
 This is a collection of scripts to automate [GitHub Enterprise](http://enterprise.github.com) workflows using the [GitHub Enterprise API](https://developer.github.com/v3/). 
 
-To interact with the api the scripts mostly use [octokat.js](https://github.com/philschatz/octokat.js).
+To interact with the API the scripts mostly use [octokat.js](https://github.com/philschatz/octokat.js).
 
 ![screenshot](screenshot.png)
 
