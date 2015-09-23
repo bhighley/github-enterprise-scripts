@@ -1,6 +1,6 @@
 ### GitHub Enterprise scripts
 
-This is a collection of scripts to automate [GitHub Enterprise](http://enterprise.github.com) workflows using the [GitHub Enterprise API](https://developer.github.com/v3/). 
+This is a collection of scripts to automate [GitHub Enterprise](http://enterprise.github.com) workflows using the [GitHub Enterprise API](https://developer.github.com/v3/). It mostly uses [octokat.js](https://github.com/philschatz/octokat.js)
 
 ![screenshot](screenshot.png)
 
